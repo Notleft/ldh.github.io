@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+/*==>S布局的css代码*/
+
+body {
+    color: #666;
+    font-size: 12px;
+}
+
+a {
+    color: #666;
+}
+
+.h-header {}
+
+.h-header .top-nav {
+    margin: 0 auto;
+    width: 1190px;
+    height: 74px;
+    padding-top: 24px;
+    /* border: 1px solid darkblue; */
+}
+
+
+/* s logo区域 */
+
+.h-header .top-nav .logo {
+    float: left;
+}
+
+.top-nav .logo h1 {
+    position: absolute;
+    text-indent: -99999px;
+}
+
+.h-header .top-nav .user-nav {
+    float: right;
+}
+
+.h-header .top-nav .search {
+    margin: 0 265px 0 357px;
+    padding-top: 10px;
+    line-height: 30px;
+    position: relative;
+}
+
+
+/* 搜索文本框 */
+
+.h-header .search .course-sel {
+    display: inline-block;
+    width: 66px;
+    height: 30px;
+    /* line-height: 25px; */
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.h-header .search input {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 30px;
+    line-height: 25px;
+    padding-left: 1em;
+    border: 1px solid #e0e0e0;
+}
+
+
+/* 下拉的三角形 */
+
+.h-header .search .icon-sel {
+    float: right;
+    margin: 14px 6px;
+}
+
+
+/* 设置弹出的课程选择层 */
+
+.h-header .search .course-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+
+.h-header .course-menu li {
+    border: 1px solid #e0e0e0;
+    width: 66px;
+}
+
+.h-header .course-menu li:hover {
+    background-color: rgb(223, 208, 208);
+}
+
+
+/* 当鼠标滑动到课程上的时候弹出显示的选择层 */
+
+.h-header .course-sel:hover .course-menu {
+    display: block;
+}
+
+.search .course-sel,
+.search input {
+    float: left;
+}
+
+
+/* 设置放大镜的样式 */
+
+.h-header .search .icon-search {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 445px;
+    top: 15px;
+    background: url("../img/images/search.gif") no-repeat;
+    display: inline-block;
+}
+
+
+/* 用户导航区域 */
+
+.h-header .top-nav .user-nav {
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.h-header .user-nav .user-nav-item {
+    float: left;
+    height: 51px;
+    line-height: 51px;
+    margin: 0 11px 0 14px;
+}
+
+
+/* 设置头像 */
+
+.h-header .user-nav .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 0 11px 0 14px;
+}
+
+.h-header .user-nav .username {
+    display: inline-block;
+}
+
+.h-header .user-nav .user {
+    position: relative;
+}
+
+
+/* 设置弹出来的用户的菜单 */
+
+.h-header .user-nav .user-menu-cover {
+    position: absolute;
+    left: 0;
+    top: 51px;
+    display: none;
+}
+
+.user-nav .user:hover .user-menu-cover {
+    display: block;
+}
+
+.user-menu-cover li {
+    display: block;
+    border: 1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+}
+
+.user-menu-cover li:hover {
+    background-color: #cecece;
+}
+
+
+/* 设置消息li */
+
+.h-header .user-nav .msg-wrap {
+    position: relative;
+    top: -6px;
+    width: 60px;
+    height: 59px;
+    background: url("../img/images/sprit-msg.png") no-repeat 0px 25px;
+}
+
+
+/* 设置消息数字 */
+
+.h-header .user-nav .msg {
+    position: relative;
+    top: -8px;
+    right: -18px;
+    display: inline-block;
+    width: 34px;
+    height: 48px;
+    line-height: 16px;
+    padding-left: 12px;
+    padding-left: 4px;
+    background: url("../img/images/sprit-msg.png") no-repeat left bottom;
+}
+
+.h-header .user-nav .msg-num {
+    color: #fff;
+}
+
+.h-header .user-nav .icon {
+    display: inline-block;
+    float: right;
+    margin: 20px 10px -2px 7px;
+}
+
+
+/* ----------------------------------- */
+
+
+/* S主导航区域 */
+
+
+/* 通栏盒子设置背景 */
+
+.site-nav {
+    background-color: #3598db;
+    font-size: 16px;
+}
+
+
+/* 设置背景右侧的红色div */
+
+
+/*父盒子 */
+
+.site-nav .bg-red-wrap {
+    margin-left: 1190px;
+    position: relative;
+}
+
+
+/* 设置背景的子盒子 */
+
+.site-nav .bg-red-wrap .bg-red {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background-color: #e7594d;
+    height: 60px;
+}
+
+
+/* 版心盒子 */
+
+.site-nav .site-nav-wrap {
+    margin: 0 auto;
+    height: 60px;
+    width: 1190px;
+}
+
+.site-nav li,
+.site-nav a {
+    color: #fff;
+}
+
+
+/* 左侧主导航 */
+
+.site-nav .main-nav {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+
+.site-nav .main-nav .menu-item {
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav .menu-item a {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 22px;
+    border-radius: 3px;
+}
+
+.site-nav .menu-item a.cur {
+    background: #2db0f9;
+}
+
+.site-nav .menu-item a:hover {
+    background: #2db0f9;
+}
+
+
+/* 右侧附属导航 */
+
+.aside-nav {
+    float: right;
+    padding-left: 20px;
+    background-color: #e7594d;
+}
+
+.site-nav .aside-nav li {
+    float: left;
+    line-height: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+
+/* E主导航区域 */
+
+
+/* ---------------------------------- */
+
+
+/* --------------S banner区域------------- */
+
+.h-banner {
+    width: 100%;
+    height: 404px;
+    overflow: hidden;
+}
+
+.h-banner img {
+    height: 404px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+/* -------------------E banner区域--------------------- */
+
+
+/* --------------------S 产品列表区域------------------------- */
+
+.h-main .course-list,
+.h-main .book-list {
+    margin: 0 auto;
+    width: 1190px;
+    padding-top: 40px;
+}
+
+
+/* 课程列表的标题 */
+
+.p-module .p-module-head {
+    font-size: 22px;
+    height: 22px;
+    color: #1a1a1a;
+}
+
+.p-module .p-module-head .p-module-title {
+    float: left;
+    padding-left: 18px;
+    height: 22px;
+    border-left: 7px solid #2db0f9;
+}
+
+
+/* more超级链接处理 */
+
+.p-module .p-module-head .p-module-more {
+    float: right;
+    line-height: 22px;
+    font: 12px;
+    color: #5da7df;
+}
+
+
+/* 设置课程列表项 */
+
+.p-module .p-module-body {
+    overflow: hidden;
+}
+
+.p-module .p-module-body .p-list-item {
+    padding-top: 30px;
+    margin: 0 14px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1a1a1a;
+    float: left;
+}
+
+.p-module .p-list-item img {
+    height: 180px;
+    width: 207.5px;
+    border: 1px solid #e1e1e1;
+}
+
+
+/*教材列表的标题 */
+
+
+/* more超级链接处理 */
+
+
+/* 设置课程列表项 */
+
+
+/* ----------------------E 产品列表区域---------------------------- */

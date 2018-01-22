@@ -1,0 +1,51 @@
+.triangle-down {
+    border: 5px solid #666666;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+/* 单三角 */
+
+triangle-up-s {
+    position: relative;
+}
+
+triangle-up-s:before,
+triangle-up-s:after {
+    content: "";
+    border: 5px solid #f1f1f1;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #f1f1f1;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%； top: -12px;
+}
+
+.triangle-up-s:after {
+    boder-color: transparent transparent #fff;
+    top: 10px;
+}
+
+
+/* 弹出层的基类 */
+
+.cover {
+    background-color: #fff;
+}
